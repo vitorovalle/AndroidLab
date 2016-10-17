@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SIDED</string>
+    <string name="title_activity_segunda_tela">SegundaTelaActivity</string>
+
+    <string-array name="lista_cursos">
+    <item>Selecione o curso</item>
+    <item>Linguagem de Programação I</item>
+    <item>Linguagem de Programação II</item>
+    <item>Banco de Dados I</item>
+    <item>Engenharia de Software</item>
+    <item>Estrutura de Dados</item>
+    </string-array>
+
+    <string-array name="lista_aulas">
+    <item>Selecione a aula</item>
+     <item>Aula 1</item>
+     <item>Aula 2</item>
+     <item>Aula 3</item>
+     <item>Aula 4</item>
+     <item>Aula 5</item>
+    </string-array>
+</resources>

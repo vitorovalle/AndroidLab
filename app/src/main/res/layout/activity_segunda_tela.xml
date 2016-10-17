@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_segunda_tela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.principal.sided.SegundaTelaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Selecione a tarefa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:textSize="24sp"
+            android:id="@+id/CaixaTexto2" />
+
+        <Button
+            android:text="Progresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginBottom="97dp"
+            android:id="@+id/BotaoProgresso" />
+
+        <Button
+            android:text="Cadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="92dp"
+            android:id="@+id/BotaoCadastro"
+            android:layout_alignTop="@+id/BotaoProgresso" />
+
+        <Button
+            android:text="Sair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="23dp"
+            android:id="@+id/BotaoSair" />
+
+        <CheckedTextView
+            android:text="Laboratório enviado ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ConfereLaboratorio"
+            android:textSize="24sp"
+            android:layout_below="@+id/ConfereExercicio"
+            android:layout_centerHorizontal="true"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:layout_marginTop="41dp" />
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="171dp"
+            android:id="@+id/BarraProgresso"
+            android:visibility="visible"
+            android:max="3"
+            android:minWidth="300dp"
+            android:progress="1" />
+
+        <CheckedTextView
+            android:text="Exercício Feito ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ConfereExercicio"
+            android:textSize="24sp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/SeletorAula"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:id="@+id/SeletorCurso"
+            android:layout_below="@+id/CaixaTexto2"
+            android:layout_alignParentStart="true"
+            android:entries="@array/lista_cursos"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:id="@+id/SeletorAula"
+            android:layout_below="@+id/SeletorCurso"
+            android:entries="@array/lista_aulas"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

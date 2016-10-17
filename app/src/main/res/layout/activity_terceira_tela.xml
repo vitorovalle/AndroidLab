@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_terceira_tela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.principal.sided.TerceiraTelaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp">
+
+        <TextView
+            android:text="Cadastro do Aluno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:textSize="24sp"
+            android:id="@+id/CaixaTexto3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/CadastroEmail"
+            android:hint="Email"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/CadastroMatricula" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/CadastroGithub"
+            android:hint="Conta GitHub"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/CadastroEmail"
+            android:layout_alignStart="@+id/CadastroEmail" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginTop="52dp"
+            android:id="@+id/CadastroNome"
+            android:hint="Nome"
+            android:layout_below="@+id/CaixaTexto3"
+            android:layout_alignStart="@+id/CadastroMatricula"
+            style="@style/Widget.AppCompat.EditText" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/CadastroMatricula"
+            android:hint="Matrícula (número)"
+            android:layout_alignBottom="@+id/CadastroEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="54dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SeletorCurso2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="57dp"
+            android:entries="@array/lista_cursos"/>
+
+        <Button
+            android:text="OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="38dp"
+            android:id="@+id/BotaoOk" />
+
+        <Button
+            android:text="Limpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="41dp"
+            android:id="@+id/BoatoLimpar2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</RelativeLayout>
