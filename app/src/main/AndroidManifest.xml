@@ -18,7 +18,7 @@
         <activity
             android:name=".SegundaTelaActivity"
             android:label="@string/title_activity_segunda_tela"
-            android:theme="@style/AppTheme.NoActionBar" />
+           />
         <activity android:name=".TerceiraTelaActivity" />
         <activity android:name=".QuartaTelaActivity"></activity>
     </application>

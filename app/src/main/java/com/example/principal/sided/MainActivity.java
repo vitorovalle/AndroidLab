@@ -1,19 +1,10 @@
 package com.example.principal.sided;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.os.Bundle;
-import android.app.Activity;
-import android.content.Intent;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
-
-import static com.example.principal.sided.R.id.BotaoAcessar;
-import static com.example.principal.sided.R.id.activity_main;
-import static com.example.principal.sided.R.id.activity_segunda_tela;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,6 +29,4 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
 }
