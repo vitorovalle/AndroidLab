@@ -1,7 +1,7 @@
 package com.example.principal.sided;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 public class QuartaTelaActivity extends AppCompatActivity {
 
